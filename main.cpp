@@ -4,7 +4,7 @@
 
 /*
 We create an object named filePath to store the string in, user input for the path of the file, getline reads the user inputs from cin and stores it into filePath. With ifstream we acces the object,
- we say reading markdown file, then we open filepath where we stored it we store everything in content if it fails the application closes if it works content gets displayed.
+we say reading markdown file, then we open filepath where we stored it we store everything in content if it fails the application closes if it works content gets displayed.
 */
 
 int main()
