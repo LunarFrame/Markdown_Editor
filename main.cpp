@@ -22,8 +22,14 @@ int main()
         return 1;
     }
 
-    std::getline(file, content);
-    std:: cout << content;
+        if (file.is_open()) {
+        // Read each line from the file and store it in the
+        // 'line' variable.
+        while (getline(file, content)) {
+        std:: cout << content << "\n";
+        }
 
     return 0;
-}
+
+        } 
+    }
