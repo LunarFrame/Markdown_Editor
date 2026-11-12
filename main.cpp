@@ -12,7 +12,7 @@ int main()
     std::string filePath;
     std::cout << "Type file path for markdown file \n";
     std::getline (std::cin, filePath);
-    std::ifstream file;
+    std::fstream file;
     std:: cout << "Reading markdown file \n";
     file.open(filePath);
     std::string content;
@@ -32,4 +32,8 @@ int main()
     return 0;
 
         } 
+   file << content;
+
+
+
     }
