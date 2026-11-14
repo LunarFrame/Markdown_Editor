@@ -1,5 +1,5 @@
-#include <iostream> // Standard C++ Library
-#include <fstream> // To read,write,edit library
+#include <iostream> 
+#include <fstream>
 
 
 /*
@@ -12,28 +12,24 @@ int main()
     std::string filePath;
     std::cout << "Type file path for markdown file \n";
     std::getline (std::cin, filePath);
-    std::fstream file;
-    std:: cout << "Reading markdown file \n";
-    file.open(filePath);
-    std::string content;
 
+    std::fstream file;
+    std::cout << "Reading markdown file \n";
+    file.open(filePath);
+    
+    std::string content;
     if (!file.is_open()) {
         std::cout << "\nCould not find file";
         return 1;
     }
-
         if (file.is_open()) {
-        // Read each line from the file and store it in the
-        // 'line' variable.
         while (getline(file, content)) {
         std:: cout << content << "\n";
         }
-
-    return 0;
-
-        } 
-   file << content;
-
-
-
+    } 
+    
+    std::string input;
+    while(true) {
+    std::getline(std::cin, input);
     }
+}
